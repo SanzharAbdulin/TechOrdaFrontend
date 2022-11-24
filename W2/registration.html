@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Regisration</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="http://127.0.0.1:5500/W2/login.html">
+      <div>
+        <label for="name">Name</label>
+        <br /><input type="text" id="name" , name="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <br /><input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="password">Create Password</label>
+        <br /><input type="password" id="pass" name="password" />
+      </div>
+      <div>
+        <label for="date">Birthday:</label>
+        <br /><input type="date" id="date" name="birthdate" />
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <br /><input type="tel" name="phone" id="phone" />
+      </div>
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <input type="radio" id="male" name="gender" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" />
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Select current position</legend>
+        <div>
+          <input type="checkbox" id="student" name="position" />
+          <label for="student">Student</label>
+        </div>
+        <div>
+          <input type="checkbox" id="worker" name="position" />
+          <label for="worker">Worker</label>
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </body>
+</html>
