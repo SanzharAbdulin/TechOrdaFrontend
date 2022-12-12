@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+} /* universal selector */
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.sign-up-form {
+  display: flex;
+  justify-content: center;
+  background-color: #fed049;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: solid 4px;
+  padding: 10px;
+  margin-right: 340px;
+  margin-left: 340px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.group-tables::before {
+  content: 'Green - proceed to the knockout stages'; /*(don't know how to insert icon of green) */
+}
+.restriction::after {
+  content: '* - Data is up to November 23 ';
+  font-weight: bold;
+}
+.main-item {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+ol > li {
+  background-color: #47c8e9;
+  font-size: 20px;
+  text-decoration: underline;
+}
+ol + p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+div ~ p {
+  color: rgb(255, 65, 223);
+  position: relative;
+}
+header h1 {
+  background-color: rgb(255, 255, 98);
+  height: 80px;
+  width: 100%;
+}
+
+ul li:hover a {
+  padding-left: 50px;
+}
+main {
+  position: absolute;
+  margin-left: 200px;
+  height: auto;
+  display: flex;
+  gap: 20px;
+}
+.main-element {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid darkblue;
+  border-radius: 20px;
+  flex-basis: 100%;
+  background-color: aliceblue;
+  padding: 10px;
+}
+.sidebar {
+  height: 30px;
+  width: 200px;
+  top: 80px;
+}
+.sidebar li {
+  height: 60px;
+  font-size: auto;
+}
+.sidebar header {
+  font-weight: bold;
+  height: 30px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  main {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100px;
+  }
+}
+@media (hover: hover) {
+  .main-element:hover {
+    background-color: chartreuse;
+  }
+}

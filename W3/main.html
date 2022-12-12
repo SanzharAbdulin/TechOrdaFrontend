@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>World Cup Standings</title>
+    <style>
+      #main-item-group4-tabels {
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      tbody td {
+        text-align: center;
+      }
+      th,
+      td {
+        padding: 5px;
+        border: 2px solid black;
+        text-align: center;
+      }
+      thead td {
+        font-weight: bold;
+      }
+      tfoot {
+        width: 100%;
+        background-color: rgb(255, 251, 20);
+      }
+      body {
+        background-color: darkkhaki;
+      }
+      .knockout-place {
+        background-color: rgb(96, 235, 96);
+      }
+      .restriction p:first-child {
+        text-align: start;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>World Cup 2022 Statistics</h1>
+    <div class="main-item">
+      <div class="box group-tables">
+        <h2>Group E Standings</h2>
+        <table id="main-item-group4-tabels">
+          <thead>
+            <td>Place</td>
+            <td>Country</td>
+            <td>GD</td>
+            <td>Points</td>
+          </thead>
+          <tbody>
+            <tr class="knockout-place">
+              <td>1</td>
+              <td>Spain</td>
+              <td>7:0</td>
+              <td>3</td>
+            </tr>
+            <tr class="knockout-place">
+              <td>2</td>
+              <td>Japan</td>
+              <td>2:1</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Germany</td>
+              <td>1:2</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Costa-Rica</td>
+              <td>0:7</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td><b>Gameweek 1</b></td>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="box restriction">
+        <p>Goal Scored: *</p>
+        <dl>
+          <dt>Spain:</dt>
+          <dd>D.Olmo, M.Asensio, F.Torres x 2, Gavi, C.Soler, A.Morata</dd>
+          <dt>Japan:</dt>
+          <dd>R.Doan, T.Asano</dd>
+          <dt>Germany:</dt>
+          <dd>I.Gundogan</dd>
+        </dl>
+      </div>
+
+      <div class="box">
+        <h2>Top 5 Goalscorers</h2>
+        <ol>
+          <li>O.Giroud - 2</li>
+          <li>B.Saka - 2</li>
+          <li>M.Taremi - 2</li>
+          <li>F.Torres - 2</li>
+          <li>E.Valencia - 2</li>
+        </ol>
+        <p>All players share 1st place</p>
+        <p>World Cup winner scores approximately 5-6 goals</p>
+      </div>
+
+      <div class="box">
+        <h2>List of Teams NOT scored any goal</h2>
+        <ul>
+          <li>Senegal</li>
+          <li>Qatar</li>
+          <li>Poland</li>
+          <li>Mexico</li>
+          <li>Tunis</li>
+          <li>Denmark</li>
+          <li>Costa-Rica</li>
+          <li>Croatia</li>
+          <li>Morocco</li>
+          <li>Cameroon</li>
+          <li>Uruguay</li>
+          <li>South Korea</li>
+        </ul>
+        <form action="/quarter.html">
+          <button target="_blank" style="padding: 15px; font-size: 20px">
+            Quarter Finals Results!
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
